@@ -6,6 +6,9 @@
   font-family: sans-serif;
 }
 
+body{
+	background-color: #F17013; /*Modif background Alex 12/12/16*/
+}
 /*General*/
 /* TEXTE */
 
@@ -21,12 +24,6 @@ h6{
 p{
   color: #fff;
   font-size: 14px;
-}
-
-body{
-  background: url('../images/bgbody2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #acceuil:hover{
@@ -175,8 +172,7 @@ body{
 @media all and (min-width: 801px) and (max-width: 1920px) {
 
   .container{
-    margin:0px auto 300px auto;
-    width: 950px;
+    /*Container useless? Alex 12/12/16*/
   }
 
   /*Header*/
@@ -205,9 +201,10 @@ body{
 
   /* NAV */
   nav{
-    margin-top: 125px;
-    box-shadow: 5px 5px 12px 5px #E1CFBB;
-    background-color: rgba(225, 207, 187, 0.4);
+  	position: fixed; /*Modifié le 12/12/16 par Chris*/
+  	width: 100%;
+  	text-align: center; /*Modifié le 12/12/16 par Chris*/
+    background-color: rgba(225, 207, 187, 0.3); /*Modifié le 12/12/16 par Chris*/
   }
 
   a{
@@ -215,16 +212,17 @@ body{
     font-weight: bold;
     color: #37251C;
   }
-  ul{
+  ul{/*Modifié le 12/12/16 par Chris*/
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
     list-style: none;
   }
-  li{
-    margin: 5px;
+  li{/*Modifié le 12/12/16 par Chris*/
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 1px 1px #F17013;
   }
   /*End Nav*/
@@ -260,7 +258,7 @@ body{
     margin-top: 50px;
     padding: 5%;
     border: 2px solid #F17013;
-    box-shadow: 5px 5px 12px 5px #F17013;
+    box-shadow: 1px 0.5px 5px 5px #F17013; /*Modifié le 12/12/16 par Chris*/
     background-color: rgba(0, 0, 0, 0.4);
   }
 
@@ -293,7 +291,7 @@ body{
   }
 
   article{
-    box-shadow: 5px 5px 12px 5px #F17013;
+    box-shadow: 1px 0.5px 5px 5px #F17013; /*Modifié le 12/12/16 par Chris*/
     background-color: rgba(0, 0, 0, 0.4);
   }
 
@@ -302,8 +300,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 80%;llud autem non dubitatur quod cum esset aliquando virtutum omnium domicilium Roma, ingenuos advenas plerique nobilium, ut Homerici bacarum suavitate Lotophagi.</p>
-                    <inpu
+    width: 80%;
     height: 275px;
     margin-top: 65px;
     padding: 2%;
@@ -398,7 +395,7 @@ body{
 
   iframe{
     border: 2px solid #F17013;
-    box-shadow: 5px 5px 12px 5px #F17013;
+    box-shadow: 2px 2px 5px 5px #F17013; /*Modifié le 12/12/16 par Chris*/
   }
 
   /*.horplan img{

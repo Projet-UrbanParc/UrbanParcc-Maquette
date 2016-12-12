@@ -101,4 +101,3 @@ function onglet3() {
 
 }
 
-function switchNav
