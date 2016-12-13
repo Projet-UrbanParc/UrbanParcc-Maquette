@@ -50,13 +50,8 @@ $(function(){
 //   });
 // });
 
-$( document ).ready(function() {
-    $('.mainaccro').hide();
-    $('.mainanni').hide();
-    $('.mainbist').hide();
-    $('.mainev').hide();
-    $('.mainskate').hide();
-});
+/*
+
 function onglet1() {
 
   $('.mainaccro').hide();
@@ -101,3 +96,4 @@ function onglet3() {
 
 }
 
+*/
