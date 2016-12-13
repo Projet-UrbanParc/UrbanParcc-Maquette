@@ -362,6 +362,7 @@ p{
   .menu p{
     margin-top: 50px;
   }
+
   /*End Main*/
 
   /* FOOTER */
@@ -395,7 +396,7 @@ p{
 
   iframe{
     border: 2px solid #F17013;
-    box-shadow: 2px 2px 5px 5px #F17013; /*Modifié le 12/12/16 par Chris*/
+    box-shadow: 2px 2px 5px 5px gray; /*Modifié le 12/12/16 par Chris*/
   }
 
   /*.horplan img{

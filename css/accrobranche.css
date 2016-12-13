@@ -252,9 +252,9 @@ body{
     margin-top: 50px;
   }
 
-  .tarifs{
-    width: 90%;
-    height: 275px;
+  .tarifs{ /*Modification du width et height Alex*/
+    width: 75%;
+    height: 450px;
     margin-top: 52px;
     padding: 2%;
     border: 2px solid #025515;

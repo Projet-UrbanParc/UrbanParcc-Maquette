@@ -25,9 +25,7 @@ p{
 }
 
 body{
-  background: url('../images/bgbodysk8.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #33AC91; /*Modifié le 13/12/16 Alex*/
 }
 
 .acceuil:hover{
@@ -62,8 +60,7 @@ body{
 @media all and (min-width: 801px) and (max-width: 1920px) {
 
   .container{
-    margin:0px auto 300px auto;
-    width: 950px;
+    /*Container useless? Alex 13/12/16*/
   }
 
   /*Header*/
@@ -91,10 +88,11 @@ body{
   /*End Header*/
 
   /* NAV */
-  nav{
-    margin-top: 125px;
-    box-shadow: 5px 5px 12px 5px #E1CFBB;
-    background-color: rgba(225, 207, 187, 0.4);
+  nav{ /*Modif le 13/12/16 Alex*/
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(225, 207, 187, 0.3);
   }
 
   a{
@@ -102,16 +100,19 @@ body{
     font-weight: bold;
     color: #37251C;
   }
-  ul{
+  ul{ /*Modif le 13/12/16 Alex*/
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
     list-style: none;
   }
-  li{
-    margin: 5px;
+  li{ /*Modif le 13/12/16 Alex*/
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 1px 1px #33AC91;
   }
   /*End Nav*/
@@ -147,7 +148,7 @@ body{
     margin-top: 50px;
     padding: 5%;
     border: 2px solid #F17013;
-    box-shadow: 5px 5px 12px 5px #F17013;
+    box-shadow: 1px 0.5px 5px 5px #F17013; /*Modif le 13/12/16 Alex*/
     background-color: rgba(0, 0, 0, 0.4);
   }
 
@@ -181,7 +182,7 @@ body{
   }
 
   article{
-    box-shadow: 5px 5px 12px 5px #33AC91;
+    box-shadow: 1px 0.5px 5px 5px #33AC91; /*Modif le 13/12/16 Alex*/
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -253,9 +254,9 @@ body{
     margin-top: 50px;
   }
 
-  .tarifs{
-    width: 90%;
-    height: 275px;
+  .tarifs{ /*Modification du width et height Alex*/
+    width: 75%;
+    height: 450px;
     margin-top: 52px;
     padding: 2%;
     border: 2px solid #33AC91;
@@ -297,7 +298,7 @@ body{
 
   iframe{
     border: 2px solid #33AC91;
-    box-shadow: 5px 5px 12px 5px #33AC91;
+    box-shadow: 2px 2px 5px 5px gray; /*Modif le 13/12/16 Alex*/
   }
 
   /*.horplan img{

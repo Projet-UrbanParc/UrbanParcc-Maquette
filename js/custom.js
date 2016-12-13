@@ -97,7 +97,43 @@ function onglet3() {
   $('.mainskate').effect('drop');
   $('.mainskate').fadeIn();
     $('link').attr('href','./css/skatepark.css');
-
-
 }
 
+function onglet4() {
+
+  $('.mainac').hide();
+  $('.mainanni').hide();
+  $('.mainskate').hide();
+  $('.mainev').hide();
+  $('.mainaccro').hide();
+
+  $('.mainbist').effect('drop');
+  $('.mainbist').fadeIn();
+    $('link').attr('href','./css/bistrot.css');
+}
+
+function onglet5() {
+
+  $('.mainac').hide();
+  $('.mainanni').hide();
+  $('.mainskate').hide();
+  $('.mainbist').hide();
+  $('.mainaccro').hide();
+
+  $('.mainev').effect('drop');
+  $('.mainev').fadeIn();
+    $('link').attr('href','./css/événement.css');
+}
+
+function onglet6() {
+
+  $('.mainac').hide();
+  $('.mainev').hide();
+  $('.mainskate').hide();
+  $('.mainbist').hide();
+  $('.mainaccro').hide();
+
+  $('.mainanni').effect('drop');
+  $('.mainanni').fadeIn();
+    $('link').attr('href','./css/anniversaire.css');
+}
