@@ -241,7 +241,7 @@ p{
   }
 
   h3{
-    color: #F17013;
+    color: white;
     font-size: 30px;
     text-shadow: 2px 1px #000;
   }
@@ -270,9 +270,10 @@ p{
     align-items: center;
     width: 100%;
     height: 100px;
-    background: url('../images/actu.png');
+    /*background: url('../images/actu.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color: #F17013;/*Modifié le 13/12/16 par Chris*/
   }
 
   aside p{
@@ -315,9 +316,11 @@ p{
     align-items: center;
     width: 100%;
     height: 100px;
-    background: url('../images/event.jpg');
+    /*background: url('../images/event.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color: #F17013;/*Modifié le 13/12/16 par Chris*/
+    border-radius: 20px;/*Modifié le 13/12/16 par Chris*/
   }
 
   .evenement p{
@@ -328,8 +331,8 @@ p{
     width: 250px;
     height: 50px;
     margin-top: 10px;
-    color: #CE3877;
-    text-shadow: 2px 2px #3C8397;
+    color: black;
+    /*text-shadow: 2px 2px #3C8397;*//*Modifié le 13/12/16 par Chris*/
     font-weight: bold;
     border-radius: 5px;
     border-style: none;
@@ -356,9 +359,11 @@ p{
     align-items: center;
     width: 100%;
     height: 100px;
-    background: url('../images/bistro.png');
+    /*background: url('../images/bistro.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color: #F17013;/*Modifié le 13/12/16 par Chris*/
+    border-radius: 20px;/*Modifié le 13/12/16 par Chris*/
   }
 
   .menu p{
