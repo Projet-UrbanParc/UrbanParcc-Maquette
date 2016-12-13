@@ -28,27 +28,27 @@ body{
   background-color: #33AC91; /*Modifié le 13/12/16 Alex*/
 }
 
-.acceuil:hover{
+#acceuil:hover{
   color: #03758D;
 }
 
-.accrobranche:hover{
+#accrobranche:hover{
   color: #025515;
 }
 
-.skatpark:hover{
+#skatpark:hover{
   color: #33AC91;
 }
 
-.bistrot:hover{
+#bistrot:hover{
   color: #FF792F;
 }
 
-.evenementM:hover{
+#evenementM:hover{
   color: #E93F34;
 }
 
-.anniversaire:hover{
+#anniversaire:hover{
   color: #CE3877;
 }
 
@@ -74,7 +74,7 @@ body{
     border-radius: 5px;
     background: url('../images/bgsk8.jpg');
     background-size: cover;
-
+    border-bottom: 3px solid #33AC91;
   }
 
   h1{

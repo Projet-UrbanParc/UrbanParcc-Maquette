@@ -28,27 +28,27 @@ body{
   background-color: #025515; /*Modif background Alex 12/12/16*/
 }
 
-.acceuil:hover{
+#acceuil:hover{
   color: #03758D;
 }
 
-.accrobranche:hover{
+#accrobranche:hover{
   color: #025515;
 }
 
-.skatpark:hover{
+#skatpark:hover{
   color: #33AC91;
 }
 
-.bistrot:hover{
+#bistrot:hover{
   color: #FF792F;
 }
 
-.evenementM:hover{
+#evenementM:hover{
   color: #E93F34;
 }
 
-.anniversaire:hover{
+#anniversaire:hover{
   color: #CE3877;
 }
 
@@ -75,6 +75,7 @@ body{
     background: url('../images/bgaccro.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: 3px solid #025515;
   }
 
   h1{
@@ -123,7 +124,7 @@ body{
     height: 800px;
     padding: 5%;
     border-radius: 5px;
-    background: url('../images/bgmainaccro.jpg');
+    background-color: #628030;
   }
 
   h3{
@@ -309,4 +310,188 @@ body{
     margin-top: 20px;
   }
   /*End Footer*/
+}
+
+/*=========================================================*/
+/*   RESPONSIVE   (min-width: 360px and max-width: 80px)   */
+/*=========================================================*/
+
+@media all and (min-width: 360px) and (max-width: 800px) {
+
+  /*Header*/
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: url('../images/bgaccro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1{
+    color: #025515;
+    font-family: sans-serif;
+    text-shadow: 1px 2px #000;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  /*=End Header=*/
+
+/*------------------------------------------------*/
+
+  /* MENU BURGER */
+  .btn-navigation{
+  	position: absolute;
+  	right: 10px;
+  	top: 10px;
+  	z-index: 999;
+  	cursor: pointer;
+  }
+
+  .btn-navigation .barre{
+  	width: 25px;
+  	height: 4px;
+  	background: #025515;
+  	margin-top: 3px;
+  	transition: background .3s ease-in-out;
+  	-webkit-transition: background .3s ease-in-out;
+  }
+
+  .btn-navigation .barre.white{
+  	background: #025515;
+  }
+
+  nav.isOpen{
+  	transform: translateX(0%);
+  	-webkit-transform: translateX(0%);
+  }
+
+  nav{
+  	position: fixed;
+  	right: 0;
+    top: 0;
+  	padding: 5px;
+  	background: #333;
+  	width: 40%;
+  	height: 100%;
+  	transition: transform .6s ease-in-out;
+  	-webkit-transition: transform .6s ease-in-out;
+  	transform: translateX(100%);
+  	-webkit-transform: translateX(100%);
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 15px;
+  	top: 140px;
+  	transform: translateY(-50%);
+  	-webkit-transform: translateY(-50%);
+  }
+
+  nav ul li{
+  	list-style: none;
+  	margin: 10px 0;
+  }
+
+  nav ul li a{
+  	text-decoration: none;
+  	color:  #fff;
+  	margin: 10px 0;
+  	font-size: 15px;
+  }
+/*=FIN MENU BURGER=*/
+
+/*------------------------------------------------*/
+
+/* MILIEU DE PAGE */
+
+  h3{
+    color: #009422;
+    text-align: center;
+    font-size: 19px;
+    text-shadow: 3px 3px 3px #025515;
+  }
+
+  p{
+    color: #fff;
+    font-size: 14px;
+    text-shadow: none;
+  }
+
+  section{
+    padding: 5px;
+    /*background-color: #505050;*/
+  }
+
+  aside{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: solid 2px #025515;
+    border-radius: 10px;
+  }
+
+  article{
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: solid 2px #025515;
+    border-radius: 10px;
+  }
+
+  aside img{
+    width: 50%;
+  }
+
+  .tarif{
+    margin-top: 10px;
+  }
+
+  .art{
+    margin-top: 5px;
+  }
+ /*=FIN MILIEU PAGE=*/
+
+ /*------------------------------------------------*/
+
+ /* FOOTER */
+  .icontel{
+    margin-left: 55px;
+  }
+
+  .fa{
+    margin: 15px;
+    font-size:40px;
+    color:#025515;
+    cursor:pointer;
+    transition: 1s;
+  }
+
+  .fa-facebook-official:hover{
+    color: #4862A3;
+  }
+
+  .fa-map:hover{
+    color: #C7BC00;
+  }
+
+  .fa-info-circle:hover{
+    color: #C1C2C1;
+  }
+
+  .horplan{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #353535;
+  }
 }
