@@ -25,9 +25,7 @@ p{
 }
 
 body{
-  background: url('../images/bgbodyacc.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #025515; /*Modif background Alex 12/12/16*/
 }
 
 .acceuil:hover{
@@ -62,8 +60,7 @@ body{
 @media all and (min-width: 801px) and (max-width: 1920px) {
 
   .container{
-    margin:0px auto 300px auto;
-    width: 950px;
+    /*Container useless? Alex 12/12/16*/
   }
 
   /*Header*/
@@ -77,7 +74,7 @@ body{
     border-radius: 5px;
     background: url('../images/bgaccro.jpg');
     background-size: cover;
-
+    background-repeat: no-repeat;
   }
 
   h1{
@@ -92,9 +89,10 @@ body{
 
   /* NAV */
   nav{
-    margin-top: 125px;
-    box-shadow: 5px 5px 12px 5px #E1CFBB;
-    background-color: rgba(225, 207, 187, 0.4);
+    position: fixed; /*Modifié le 12/12/16 par Alex*/
+    width: 100%;
+    text-align: center; /*Modifié le 12/12/16 par Alex*/
+    background-color: rgba(225, 207, 187, 0.3); /*Modifié le 12/12/16 par Alex*/
   }
 
   a{
@@ -102,16 +100,17 @@ body{
     font-weight: bold;
     color: #37251C;
   }
-  ul{
+  ul{/*Modifié le 12/12/16 par Alex*/
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
     list-style: none;
   }
-  li{
-    margin: 5px;
+  li{/*Modifié le 12/12/16 par Alex*/
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 1px 1px #025515;
   }
   /*End Nav*/
@@ -147,7 +146,7 @@ body{
     margin-top: 50px;
     padding: 5%;
     border: 2px solid #F17013;
-    box-shadow: 5px 5px 12px 5px #F17013;
+    box-shadow: 1px 0.5px 5px 5px #F17013; /*Modifié le 12/12/16 par Alex*/
     background-color: rgba(0, 0, 0, 0.4);
   }
 
@@ -181,7 +180,7 @@ body{
   }
 
   article{
-    box-shadow: 5px 5px 12px 5px #025515;
+    box-shadow: 1px 0.5px 5px 5px #025515; /*Modifié le 12/12/16 par Alex*/
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -296,7 +295,7 @@ body{
 
   iframe{
     border: 2px solid #025515;
-    box-shadow: 5px 5px 12px 5px #025515;
+    box-shadow: 2px 2px 5px 5px #025515; /*Modifié le 12/12/16 par Alex*/
   }
 
   /*.horplan img{

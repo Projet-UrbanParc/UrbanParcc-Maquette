@@ -58,8 +58,7 @@ body{
 @media all and (min-width: 801px) and (max-width: 1920px) {
 
   .container{
-    margin:0px auto 300px auto;
-    width: 950px;
+    /*Container useless? chris 13/12/16*/
   }
 
   /*Header*/
@@ -71,8 +70,9 @@ body{
     width: 100%;
     height: 400px;
     border-radius: 5px;
-    background: url('../images/bgannif.jpg');
+    background: url('../images/bgann.jpg');
     background-size: cover;
+    border-bottom: solid 3px #CE3877;
 
   }
 
@@ -88,9 +88,10 @@ body{
 
   /* NAV */
   nav{
-    margin-top: 125px;
-    box-shadow: 5px 5px 12px 5px #E1CFBB;
-    background-color: rgba(225, 207, 187, 0.4);
+    position: fixed; /*Modifié le 13/12/16 par Chris*/
+  	width: 100%;
+  	text-align: center; /*Modifié le 13/12/16 par Chris*/
+    background-color: rgba(225, 207, 187, 0.3); /*Modifié le 13/12/16 par Chris*/
   }
 
   a{
@@ -99,16 +100,19 @@ body{
     color: #37251C;
   }
   ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
+    /*Modifié le 13/12/16 par Chris*/
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2%;
+      width: 100%;
+      list-style: none;
   }
   li{
-    margin: 5px;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-shadow: 1px 1px #952C58;
+    /*Modifié le 13/12/16 par Chris*/
+      font-family: sans-serif;
+      font-size: 30px;
+      text-shadow: 1px 1px #F17013;
   }
   /*End Nav*/
 
@@ -120,8 +124,8 @@ body{
     height: 800px;
     padding: 5%;
     border-radius: 5px;
-    background: url('../images/bgmainannif.jpg');
-    background-size: cover;
+    /*background: url('anniversaire2.jpg');*/
+    background-color: #ECD7DE;/*Modifié le 13/12/16 par Chris*/
   }
 
   h3{
@@ -141,10 +145,10 @@ body{
     align-items: center;
     width: 80%;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 5px;/*Modifié le 13/12/16 par Chris*/
     padding: 5%;
-    border: 2px solid #F17013;
-    box-shadow: 5px 5px 12px 5px #F17013;
+    border: 2px solid #CE3877;
+    box-shadow: 1px 0.5px 5px 5px #CE3877; /*Modifié le 13/12/16 par Chris*/
     background-color: rgba(0, 0, 0, 0.4);
   }
 
@@ -178,7 +182,7 @@ body{
   }
 
   article{
-    box-shadow: 5px 5px 12px 5px #952C58;
+    box-shadow: 1px 0.5px 5px 5px #CE3877;/*Modifié le 13/12/16 par Chris*/
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -191,7 +195,7 @@ body{
     height: 275px;
     margin-top: 65px;
     padding: 2%;
-    border: 2px solid #F17013;
+    border: 2px solid #CE3877;
   }
 
   .evenement h3{
@@ -251,8 +255,8 @@ body{
   }
 
   .tarifs{
-    width: 90%;
-    height: 275px;
+    width: 70%;
+    height: 450px;
     margin-top: 52px;
     padding: 2%;
     border: 2px solid #CE3877;
@@ -294,7 +298,7 @@ body{
 
   iframe{
     border: 2px solid #952C58;
-    box-shadow: 5px 5px 12px 5px #952C58;
+    box-shadow: 1px 1px 5px 5px gray; /*Modifié le 13/12/16 par Chris*/
   }
 
   /*.horplan img{
