@@ -25,7 +25,9 @@ p{
 }
 
 body{
-  background-color: #FF792F; /*Modif le 13/12/16 Alex*/
+  background: url('../images/bgbodybistro.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .acceuil:hover{
@@ -56,7 +58,8 @@ body{
 @media all and (min-width: 801px) and (max-width: 1920px) {
 
   .container{
-    /*Container useless? Alex 13/12/16*/
+    margin:0px auto 300px auto;
+    width: 950px;
   }
 
   /*Header*/
@@ -85,10 +88,9 @@ body{
 
   /* NAV */
   nav{
-    position: fixed; /*Modifié le 13/12/16 par Alex*/
-  	width: 100%;
-  	text-align: center; /*Modifié le 13/12/16 par Alex*/
-    background-color: rgba(225, 207, 187, 0.3); /*Modifié le 13/12/16 parCAlex*/
+    margin-top: 125px;
+    box-shadow: 5px 5px 12px 5px #E1CFBB;
+    background-color: rgba(225, 207, 187, 0.4);
   }
 
   a{
@@ -96,19 +98,16 @@ body{
     font-weight: bold;
     color: #37251C;
   }
-
-  ul{ /*Modifié le 13/12/16 par Alex*/
+  ul{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2%;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
   }
-
-  li{/*Modifié le 13/12/16 par Alex*/
+  li{
+    margin: 5px;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 1px 1px #FF792F;
   }
   /*End Nav*/
@@ -144,7 +143,7 @@ body{
     margin-top: 50px;
     padding: 5%;
     border: 2px solid #F17013;
-    box-shadow: 1px 0.5px 5px 5px #F17013; /*Modifié le 13/12/16 par Alex*/
+    box-shadow: 5px 5px 12px 5px #F17013;
     background-color: rgba(0, 0, 0, 0.4);
   }
 
@@ -178,7 +177,7 @@ body{
   }
 
   article{
-    box-shadow: 1px 0.5px 5px 5px #FF792F; /*Modifié le 13/12/16 par Alex*/
+    box-shadow: 5px 5px 12px 5px #FF792F;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -282,7 +281,7 @@ body{
 
   iframe{
     border: 2px solid #FF792F;
-    box-shadow: 2px 2px 5px 5px gray; /*Modifié le 13/12/16 par Alex*/
+    box-shadow: 5px 5px 12px 5px #FF792F;
   }
 
   /*.horplan img{

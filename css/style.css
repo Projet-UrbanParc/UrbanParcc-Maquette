@@ -1,4 +1,6 @@
-/* ==RESET== */
+/*===========*/
+/*   RESET   */
+/*===========*/
 *{
   margin: 0;
   padding: 0;
@@ -9,7 +11,12 @@
 body{
 	background-color: #F17013; /*Modif background Alex 12/12/16*/
 }
-/*General*/
+
+/*===========*/
+/*  GENERAL  */
+/*===========*/
+
+
 /* TEXTE */
 
 h3{
@@ -53,9 +60,16 @@ p{
 .mainaccro, .mainskate, .mainbist, .mainev, .mainanni{
   display: none;
 }
-/* ==RESPONSIVE== (360x640) */
+
+/*==================================*/
+/* RESPONSIVE TELEPHONE  (360x640)  */
+/*==================================*/
 @media all and (min-width: 360px) and (max-width: 800px) {
-  /*Header*/
+
+ /*----------*/
+ /*  Header  */
+ /*----------*/
+
   header{
     display: flex;
     flex-direction: column;
@@ -76,9 +90,12 @@ p{
     margin-top: 20px;
     padding: 20px;
   }
-  /*End Header*/
+/*---------------------------------------*/
 
-  /* MENU BURGER */
+ /*-------------*/
+ /* MENU BURGER */
+ /*-------------*/
+
   .btn-navigation{
   	position: absolute;
   	right: 10px;
@@ -147,8 +164,12 @@ p{
   .menu{
     margin-top: 10px;
   }
+/*---------------------------------------*/
 
-/* ==MILIEU DE PAGE== */
+/*----------------*/
+/* MILIEU DE PAGE */
+/*----------------*/
+
   aside{
     margin-top: 20px;
   }
@@ -168,14 +189,22 @@ p{
   }
 
 }
-/* ==RESPONSIVE== (min-width: 801px and max-width: 1920px) */
+/*---------------------------------------*/
+
+/*======================================*/
+/* RESPONSIVE TABLETTE -> PC (801x1920) */
+/*======================================*/
+
 @media all and (min-width: 801px) and (max-width: 1920px) {
 
   .container{
     /*Container useless? Alex 12/12/16*/
   }
 
-  /*Header*/
+ /*--------*/
+ /* HEADER */
+ /*--------*/
+
   header{
     display: flex;
     flex-direction: column;
@@ -197,9 +226,12 @@ p{
     margin-top: 120px;
     padding: 20px;
   }
-  /*End Header*/
+/*---------------------------------------*/
 
-  /* NAV */
+ /*-----*/
+ /* NAV */
+ /*-----*/
+
   nav{
   	position: fixed; /*Modifié le 12/12/16 par Chris*/
   	width: 100%;
@@ -225,9 +257,12 @@ p{
     font-size: 30px;
     text-shadow: 1px 1px #F17013;
   }
-  /*End Nav*/
+/*---------------------------------------*/
 
-  /*MAIN*/
+ /*------*/
+ /* MAIN */
+ /*------*/
+
   main{
     display: flex;
     flex-direction: row;
@@ -362,10 +397,12 @@ p{
   .menu p{
     margin-top: 50px;
   }
+/*---------------------------------------*/
 
-  /*End Main*/
+ /*--------*/
+ /* FOOTER */
+ /*--------*/
 
-  /* FOOTER */
   footer{
     display: flex;
     flex-direction: column;
@@ -396,7 +433,7 @@ p{
 
   iframe{
     border: 2px solid #F17013;
-    box-shadow: 2px 2px 5px 5px gray; /*Modifié le 12/12/16 par Chris*/
+    box-shadow: 2px 2px 5px 5px #F17013; /*Modifié le 12/12/16 par Chris*/
   }
 
   /*.horplan img{
@@ -409,5 +446,5 @@ p{
     align-items: center;
     margin-top: 20px;
   }
-  /*End Footer*/
+/*---------------------------------------*/
 }
